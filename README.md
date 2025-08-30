@@ -428,33 +428,6 @@ Output:
    # Upload data/demo_reviews.csv for standardized testing
    ```
 
-### Expected Results
-- **Advertisement Detection**: F1 ≥ 0.88, Accuracy ≥ 0.92
-- **Fake Review Detection**: F1 ≥ 0.81, Accuracy ≥ 0.86
-- **Processing Speed**: <100ms per review
-- **Translation Accuracy**: Context preserved in 95%+ cases
-
-
-### Project Lead & Full-Stack Development
-- **System Architecture**: Designed end-to-end ML pipeline and web application
-- **Model Integration**: Implemented ensemble classifiers and training pipeline
-- **Frontend Development**: Built comprehensive Streamlit interface with interactive dashboard
-- **Data Pipeline**: Created robust data loading, preprocessing, and validation systems
-
-### Machine Learning & Data Science
-- **Chinese Dataset Integration**: Successfully integrated 2,000 Chinese fake reviews into training
-- **Feature Engineering**: Developed 25+ linguistic and content-based features
-- **Model Optimization**: Achieved 86%+ accuracy across all violation types
-- **Multilingual Support**: Implemented automatic translation and cross-language analysis
-
-### Quality Assurance & Testing
-- **Performance Testing**: Optimized for <100ms response time per review
-- **Batch Processing**: Implemented scalable processing for 1000+ reviews
-- **Error Handling**: Built robust error recovery and validation systems
-- **User Experience**: Designed intuitive interface with comprehensive help features
-
-*Note: This project was developed as a solo effort for the TechJam 2025 hackathon, showcasing full-stack ML development capabilities.*
-
 ## Sample Results & Demonstrations
 
 ### Chinese Review Analysis Examples
