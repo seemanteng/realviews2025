@@ -1,7 +1,7 @@
 # RealViews - ML-Powered Review Filtering System
 
-*Filtering the Noise: ML for Trustworthy Location Reviews*
-Currently hosted on https://realviews.streamlit.app/ 
+Currently hosted on https://realviews.streamlit.app/ <br>
+Video demonstration: https://youtu.be/zqmlZrHWK_c?si=PopSmoXraigc_Qie
 
 ## Project Overview
 
