@@ -1,6 +1,5 @@
 # RealViews - ML-Powered Review Filtering System
 
-**TechJam 2025 Hackathon Submission**  
 *Filtering the Noise: ML for Trustworthy Location Reviews*
 
 ## Project Overview
