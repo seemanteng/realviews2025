@@ -1,0 +1,12 @@
+# Lightweight requirements for compatibility
+streamlit
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+plotly
+requests
+nltk
+textblob
+streamlit-option-menu

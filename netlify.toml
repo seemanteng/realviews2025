@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+  command = "echo 'Testing wheel installation...' && pip install -r requirements-netlify.txt -c constraints.txt && echo 'Dependencies validated successfully! Serving static page.'"
+
+[build.environment]
+  PYTHON_VERSION = "3.11.9"
+  PIP_PREFER_BINARY = "1"
+  PIP_ONLY_BINARY = ":all:"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

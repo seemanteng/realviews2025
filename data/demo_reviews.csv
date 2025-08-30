@@ -1,0 +1,25 @@
+review_text,expected_violation,expected_type,description
+"khdbxvfwgw",True,gibberish,Random gibberish characters
+"asdfghjkl qwertyuiop",True,gibberish,Keyboard mashing gibberish
+"zxcvbnm lkjhgfdsa mnbvcxz",True,gibberish,More keyboard gibberish
+"aaaaaaaaaaaaaaaa bbbbbbbbbbbb",True,gibberish,Repetitive character gibberish
+"xyz abc def ghi jkl",True,gibberish,Non-words that look like abbreviations
+"Great food and excellent service. The pasta was perfectly cooked and the atmosphere was cozy.",False,none,Clean review with specific details
+"Nice atmosphere, friendly staff. Had the salmon which was delicious. Will come back for sure.",False,none,Positive review with personal experience
+"Good location, easy parking. The pizza was okay, nothing special but decent value for money.",False,none,Balanced review with both positive and negative aspects
+"Amazing restaurant! Visit our website www.example.com for 50% off your next meal!",True,advertisement,Contains URL and promotional offer
+"Best deals in town! Click here for special discounts and coupon codes. Free shipping available!",True,advertisement,Multiple promotional keywords and call-to-action
+"Limited time offer! Buy now and get 30% off. Don't miss this incredible deal!",True,advertisement,Urgency language and discount promotion
+"This review is about a completely different restaurant in another city. Wrong location.",True,irrelevant,Explicitly states wrong location
+"Off topic: Does anyone know how to fix my car? This has nothing to do with restaurants.",True,irrelevant,Completely unrelated content
+"Random spam content with no connection to dining or food service whatsoever.",True,irrelevant,Identified as spam and irrelevant
+"Perfect perfect perfect! Amazing incredible outstanding phenomenal experience! Must visit!",True,fake,Excessive superlatives and repetitive language
+"Absolutely perfect! Definitely the best restaurant ever! Amazing incredible outstanding!",True,fake,Multiple superlatives in unnatural combination
+"Best ever! Highly recommend! Must visit! Perfect amazing incredible experience!",True,fake,Template-like language with excessive enthusiasm
+"The service was good but the food took a while to arrive. Prices are reasonable for the area.",False,none,Balanced review with constructive feedback
+"Terrible experience. Food was cold and service was slow. Would not recommend to others.",False,none,Negative but legitimate review with specific complaints
+"Family-friendly place with good portion sizes. Kids menu available and staff was patient.",False,none,Informative review with helpful details
+"Traditional cuisine with authentic flavors. The chef clearly knows what they're doing here.",False,none,Positive review focusing on food quality
+"Check out our new menu at restaurantname.com! Special promotion this week only!",True,advertisement,Website promotion with time-sensitive offer
+"This place is in the wrong city. I was looking for the hotel not restaurant.",True,irrelevant,Location confusion making review irrelevant
+"Outstanding phenomenal extraordinary perfect amazing! Definitely absolutely must visit highly recommend!",True,fake,Extreme overuse of superlative adjectives

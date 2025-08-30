@@ -1,0 +1,37 @@
+{
+  "created_at": "2025-08-28T23:23:40.654224",
+  "total_samples": 4772,
+  "train_samples": 3024,
+  "validation_samples": 432,
+  "test_samples": 864,
+  "languages": [
+    "english",
+    "chinese"
+  ],
+  "sources": [
+    "chinese_fake",
+    "existing_english"
+  ],
+  "features_included": [
+    "text",
+    "rating",
+    "language",
+    "source",
+    "quality_score",
+    "original_label",
+    "username",
+    "date",
+    "aspect_sentiments",
+    "is_advertisement",
+    "is_fake",
+    "is_irrelevant"
+  ],
+  "multilingual_training": true,
+  "chinese_fake_data_included": true,
+  "dataset_info": {
+    "chinese_fake_samples": 2000,
+    "english_samples": 0,
+    "fake_reviews": 1468,
+    "clean_reviews": 1918
+  }
+}
