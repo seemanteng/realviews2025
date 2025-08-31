@@ -54,59 +54,58 @@ RealViews is an advanced machine learning system designed to automatically detec
 
 ```
 RealViews/
-├── app.py                              # Main Streamlit application
-├── config.py                           # System configuration and constants
-├── requirements.txt                    # Python dependencies
-├── requirements-lite.txt               # Minimal dependencies
-├── run.sh                             # Quick start script
+├── app.py                             
+├── config.py                          
+├── requirements.txt                  
+├── requirements-lite.txt            
+├── run.sh                           
 ├── 
-├── models/                            # ML Models & Training
-│   ├── policy_classifier.py          # Main ensemble classifier
-│   ├── model_trainer.py              # Training pipeline
-│   ├── llm_classifier.py             # LLM integration (optional)
-│   └── saved_models/                  # Trained model artifacts
-│       ├── v_20250828_232441/         # Latest model version
-│       ├── v_20250828_212954/         # Previous model version
-│       └── v_20250828_160514/         # Archived model version
+├── models/                            
+│   ├── policy_classifier.py          
+│   ├── model_trainer.py             
+│   ├── llm_classifier.py             
+│   └── saved_models/                  
+│       ├── v_20250828_232441/       
+│       ├── v_20250828_212954/        
+│       └── v_20250828_160514/         
+├── fake_review_detector.py            
+├── detect_fake_reviews.py             
+├── fake_review_model.pkl             
+├── fake_review_predictions.csv       
 │
-├── fake_review_detector.py            # Metadata-based fake review detection system
-├── detect_fake_reviews.py             # Production utility for fake review predictions
-├── fake_review_model.pkl              # Trained Random Forest model (metadata-based)
-├── fake_review_predictions.csv        # Latest batch analysis results
+├── utils/                             
+│   ├── data_processing.py            
+│   ├── data_loader.py                
+│   ├── chinese_fake_loader.py       
+│   ├── chinese_data_loader.py       
+│   ├── translator.py                
+│   ├── user_data_analyzer.py         
+│   ├── visualization.py             
+│   ├── security.py                  
+│   ├── performance.py              
+│   └── scalability.py               
 │
-├── utils/                             # Core Utilities
-│   ├── data_processing.py             # Text preprocessing & feature extraction
-│   ├── data_loader.py                # Dataset management
-│   ├── chinese_fake_loader.py        # Chinese dataset loader
-│   ├── chinese_data_loader.py        # Additional Chinese data utilities
-│   ├── translator.py                 # Translation utilities
-│   ├── user_data_analyzer.py         # Data analysis tools
-│   ├── visualization.py              # Dashboard components
-│   ├── security.py                   # Security utilities and validation
-│   ├── performance.py                # Performance monitoring and optimization
-│   └── scalability.py                # Scalability enhancements
+├── data/                             
+│   ├── demo_reviews.csv              
+│   ├── processed/                    
+│   │   ├── train_data.csv           
+│   │   ├── validation_data.csv      
+│   │   ├── test_data.csv            
+│   │   └── dataset_metadata.json   
+│   └── raw/                         
+│       ├── chinese_fake.csv         
+│       ├── review-Mississippi_10.json 
+│       ├── account_reviews.csv     
+│       ├── accounts.csv            
+│       ├── dev.csv                  
+│       └── results.csv             
 │
-├── data/                             # Datasets
-│   ├── demo_reviews.csv              # Sample data for testing
-│   ├── processed/                    # Processed training data
-│   │   ├── train_data.csv           # Training set (3,024 samples)
-│   │   ├── validation_data.csv      # Validation set (432 samples)
-│   │   ├── test_data.csv            # Test set (864 samples)
-│   │   └── dataset_metadata.json    # Dataset information
-│   └── raw/                         # Original data files
-│       ├── chinese_fake.csv         # Chinese fake review dataset
-│       ├── review-Mississippi_10.json # Mississippi review dataset (484MB)
-│       ├── account_reviews.csv      # Account-linked review data
-│       ├── accounts.csv             # User account metadata
-│       ├── dev.csv                  # Development dataset
-│       └── results.csv              # Analysis results
-│
-└── assets/                          # Static files and resources
+└── assets/                         
 ```
 
 ## Machine Learning Approach
 
-### Training Dataset (Latest Model v_20250828_232441)
+### Training Dataset 
 - **Total Samples**: 4,772 reviews
 - **Languages**: English (2,772) + Chinese (2,000)
 - **Training Set**: 3,024 samples (balanced across violation types)
