@@ -55,49 +55,53 @@ RealViews is an advanced machine learning system designed to automatically detec
 ```
 RealViews/
 ├── app.py                              # Main Streamlit application
+├── config.py                           # System configuration and constants
 ├── requirements.txt                    # Python dependencies
 ├── requirements-lite.txt               # Minimal dependencies
-├── setup.py                           # Package setup
-├── run.sh                            # Quick start script
+├── run.sh                             # Quick start script
 ├── 
-├── models/                           # ML Models & Training
-│   ├── policy_classifier.py         # Main ensemble classifier
-│   ├── model_trainer.py             # Training pipeline
-│   ├── llm_classifier.py            # LLM integration (optional)
-│   └── saved_models/                 # Trained model artifacts
-│       └── v_20250828_232441/        # Latest model version
+├── models/                            # ML Models & Training
+│   ├── policy_classifier.py          # Main ensemble classifier
+│   ├── model_trainer.py              # Training pipeline
+│   ├── llm_classifier.py             # LLM integration (optional)
+│   └── saved_models/                  # Trained model artifacts
+│       ├── v_20250828_232441/         # Latest model version
+│       ├── v_20250828_212954/         # Previous model version
+│       └── v_20250828_160514/         # Archived model version
 │
-├── fake_review_detector.py           # Metadata-based fake review detection system
-├── train_fake_review_model.py        # Efficient training pipeline for metadata features
-├── detect_fake_reviews.py            # Production utility for fake review predictions
-├── fake_review_model.pkl             # Trained Random Forest model (metadata-based)
-├── fake_review_predictions.csv       # Latest batch analysis results
+├── fake_review_detector.py            # Metadata-based fake review detection system
+├── detect_fake_reviews.py             # Production utility for fake review predictions
+├── fake_review_model.pkl              # Trained Random Forest model (metadata-based)
+├── fake_review_predictions.csv        # Latest batch analysis results
 │
-├── utils/                            # Core Utilities
-│   ├── data_processing.py            # Text preprocessing & feature extraction
-│   ├── data_loader.py               # Dataset management
-│   ├── chinese_fake_loader.py       # Chinese dataset loader
-│   ├── translator.py                # Translation utilities
-│   ├── user_data_analyzer.py        # Data analysis tools
-│   └── visualization.py             # Dashboard components
+├── utils/                             # Core Utilities
+│   ├── data_processing.py             # Text preprocessing & feature extraction
+│   ├── data_loader.py                # Dataset management
+│   ├── chinese_fake_loader.py        # Chinese dataset loader
+│   ├── chinese_data_loader.py        # Additional Chinese data utilities
+│   ├── translator.py                 # Translation utilities
+│   ├── user_data_analyzer.py         # Data analysis tools
+│   ├── visualization.py              # Dashboard components
+│   ├── security.py                   # Security utilities and validation
+│   ├── performance.py                # Performance monitoring and optimization
+│   └── scalability.py                # Scalability enhancements
 │
-├── data/                            # Datasets
-│   ├── processed/                   # Processed training data
-│   │   ├── train_data.csv          # Training set (3,024 samples)
-│   │   ├── validation_data.csv     # Validation set (432 samples)
-│   │   ├── test_data.csv           # Test set (864 samples)
-│   │   └── dataset_metadata.json   # Dataset information
-│   └── raw/                        # Original data files
-│       ├── chinese_fake.csv        # Chinese fake review dataset
-│       ├── review-Mississippi_10.json  # Mississippi review dataset (484MB)
-│       └── ...
+├── data/                             # Datasets
+│   ├── demo_reviews.csv              # Sample data for testing
+│   ├── processed/                    # Processed training data
+│   │   ├── train_data.csv           # Training set (3,024 samples)
+│   │   ├── validation_data.csv      # Validation set (432 samples)
+│   │   ├── test_data.csv            # Test set (864 samples)
+│   │   └── dataset_metadata.json    # Dataset information
+│   └── raw/                         # Original data files
+│       ├── chinese_fake.csv         # Chinese fake review dataset
+│       ├── review-Mississippi_10.json # Mississippi review dataset (484MB)
+│       ├── account_reviews.csv      # Account-linked review data
+│       ├── accounts.csv             # User account metadata
+│       ├── dev.csv                  # Development dataset
+│       └── results.csv              # Analysis results
 │
-├── notebooks/                       # Jupyter notebooks (development)
-├── assets/                         # Static files and resources
-└── training_scripts/               # Model training utilities
-    ├── train_chinese_fake_model.py # Chinese integration training
-    ├── train_with_chinese_data.py  # Chinese ASAP dataset training
-    └── train_with_user_data.py     # User data training
+└── assets/                          # Static files and resources
 ```
 
 ## Machine Learning Approach
