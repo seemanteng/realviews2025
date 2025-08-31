@@ -2,7 +2,6 @@
 """
 Fake Review Detection System using Metadata Analysis
 
-This system uses user metadata to detect fake reviews through:
 1. Submission time gap analysis
 2. Device/browser fingerprinting
 3. Burst analysis for review storms
